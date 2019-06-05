@@ -8,6 +8,7 @@ use Redirect;
 use App\Http\Requests\ProductoRequest;
 
 class ProductoController extends Controller {
+
     public function demo() {
         echo "Hola Mundo";
     }
