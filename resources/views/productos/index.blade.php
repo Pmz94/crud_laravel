@@ -74,4 +74,10 @@
 	<div class="col-sm-4">
 		@include('productos.fragment.aside')
 	</div>
+	<script type="text/javascript">
+		window.onload = function() {
+			$(document).find('.pagination').find('li').addClass('page-item');
+			$(document).find('.pagination').find('li a, li span').addClass('page-link');
+		};
+	</script>
 @endsection
