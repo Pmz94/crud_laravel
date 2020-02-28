@@ -1,7 +1,8 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
+	"name": "pmz94/crud-laravel",
+	"description": "CRUD con Laravel.",
 	"keywords": [
+		"crud",
 		"framework",
 		"laravel"
 	],
