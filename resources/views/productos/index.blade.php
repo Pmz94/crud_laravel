@@ -20,7 +20,7 @@
 		@else
 			@include('productos.fragment.info')
 			<table class="table table-hover">
-				<thead style="background-color:rgba(0,123,254,0.3);">
+				<thead style="background-color:rgba(111, 112, 113, 0.3);">
 					<tr>
 						<th width="20px">ID</th>
 						<th>Nombre del Producto</th>
@@ -44,7 +44,7 @@
 								</a>
 							</td>
 							<td>
-								<a href="{{ route('productos.edit', $product->id) }}" class="btn btn-sm btn-info">
+								<a href="{{ route('productos.edit', $product->id) }}" class="btn btn-sm btn-default">
                             		<span class="icon">
                             		    <i class="fas fa-edit"></i>
                             		</span>
@@ -70,14 +70,8 @@
 			{!! $products->render() !!}
 		@endif
 	</div>
-	<hr>
+
 	<div class="col-sm-4">
 		@include('productos.fragment.aside')
 	</div>
-	<script type="text/javascript">
-		window.onload = function() {
-			$(document).find('.pagination').find('li').addClass('page-item');
-			$(document).find('.pagination').find('li a, li span').addClass('page-link');
-		};
-	</script>
 @endsection
